@@ -69,7 +69,7 @@ export function App() {
               ModalRoot: {
                 defaultProps: {
                   padding: "xl",
-                  centered: true,
+                  centered: false,
                 },
               },
               Overlay: {

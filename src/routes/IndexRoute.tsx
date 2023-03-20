@@ -31,7 +31,7 @@ export function IndexRoute() {
             <Logo style={{ maxWidth: 240 }} />
           </Text>
           <Text mt={4} size="xl">
-            Not just another ChatGPT user-interface!
+            GeekChat ChatGPT user-interface!
           </Text>
           <SimpleGrid
             mt={50}
@@ -53,29 +53,7 @@ export function IndexRoute() {
               </div>
             ))}
           </SimpleGrid>
-          <Group mt={50}>
-            <SettingsModal>
-              <Button
-                size="md"
-                variant={openAiApiKey ? "light" : "filled"}
-                leftIcon={<IconKey size={20} />}
-              >
-                {openAiApiKey ? "Change OpenAI Key" : "Enter OpenAI Key"}
-              </Button>
-            </SettingsModal>
-            {!window.todesktop && (
-              <Button
-                component="a"
-                href="https://dl.todesktop.com/230313oyppkw40a"
-                // href="https://download.chatpad.ai/"
-                size="md"
-                variant="outline"
-                leftIcon={<IconCloudDownload size={20} />}
-              >
-                Download Desktop App
-              </Button>
-            )}
-          </Group>
+         
         </Container>
       </Center>
     </>
@@ -85,20 +63,8 @@ export function IndexRoute() {
 const features = [
   {
     icon: IconCurrencyDollar,
-    title: "Free and open source",
+    title: "Free to use",
     description:
-      "This app is provided for free and the source code is available on GitHub.",
-  },
-  {
-    icon: IconLock,
-    title: "Privacy focused",
-    description:
-      "No tracking, no cookies, no bullshit. All your data is stored locally.",
-  },
-  {
-    icon: IconNorthStar,
-    title: "Best experience",
-    description:
-      "Crafted with love and care to provide the best experience possible.",
-  },
+      "This app is provided for free.",
+  }
 ];
